@@ -3,6 +3,7 @@
   gather_facts: true
   become: true
   become_user: root
+  become_pass: admin!@1234
   tasks:
     - apt:
         name: nginx
