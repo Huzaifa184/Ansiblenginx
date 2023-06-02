@@ -3,11 +3,7 @@
   gather_facts: true
   become: true
   become_method: sudo
-  become_user: root
-  vars_prompt:
-    - name: "ansible_become_password"
-      prompt: "Enter your sudo password"
-      private: true
+  become_user: liveuser
   tasks:
     - name: Install nginx on Fedora
       dnf:
