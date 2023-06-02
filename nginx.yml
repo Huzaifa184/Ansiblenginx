@@ -4,7 +4,7 @@
   become: true
   vars:
     ansible_user: root
-    ansible_password: "admin!@1234"
+    ansible_password: admin!@1234
   tasks:
     - name: Install nginx on Fedora
       dnf:
