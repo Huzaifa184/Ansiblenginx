@@ -2,8 +2,9 @@
   hosts: all
   gather_facts: true
   become: true
-  become_method: sudo
-  become_user: liveuser
+  vars:
+    ansible_user: root
+    ansible_password: "admin!@1234"
   tasks:
     - name: Install nginx on Fedora
       dnf:
