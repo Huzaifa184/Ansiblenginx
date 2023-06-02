@@ -1,10 +1,10 @@
-- name: My Playbook
+- name: Create directory
   hosts: all
   gather_facts: true
   become: false
   tasks:
-    - name: Install nginx on Fedora
-      dnf:
-        name: nginx
-        state: present
-      when: ansible_os_family == "RedHat"
+    - name: Create directory in home
+      file:
+        path: "~/my_directory"
+        state: directory
+        mode: "0755"
