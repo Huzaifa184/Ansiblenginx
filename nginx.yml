@@ -8,3 +8,5 @@
         path: "~/spotify"
         state: directory
         mode: "0755"
+
+# Create a new directory in host VM with name spotify in homw directory
