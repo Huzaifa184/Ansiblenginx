@@ -5,6 +5,6 @@
   tasks:
     - name: Create directory in home
       file:
-        path: "~/my_directory"
+        path: "~/spotify"
         state: directory
         mode: "0755"
